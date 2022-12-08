@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Norms-ExtraBold";
+	src: url("../fonts/TTNorms-ExtraBold.eot");
+	src: local("☺"), url("../fonts/TTNorms-ExtraBold.woff") format("woff"),
+		url("../fonts/TTNorms-ExtraBold.ttf") format("truetype"), url("../fonts/TTNorms-ExtraBold.svg") format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Bold";
+	src: url("fonts/TTNorms-Bold.eot");
+	src: local("☺"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype"),
+		url("fonts/TTNorms-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Medium";
+	src: url("fonts/TTNorms-Medium.eot");
+	src: local("☺"), url("../fonts/TTNorms-Medium.woff") format("woff"),
+		url("../fonts/TTNorms-Medium.ttf") format("truetype"), url("../fonts/TTNorms-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Regular";
+	src: url("fonts/TTNorms-Regular.eot");
+	src: local("☺"), url("../fonts/TTNorms-Regular.woff") format("woff"),
+		url("fonts/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TTNorms-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

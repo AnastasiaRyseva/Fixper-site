@@ -1,0 +1,103 @@
+.price {
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    &__title {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+    }
+    &__table {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        padding: 2.5rem 0;
+    }
+    &__service-right {
+        display: flex;
+        gap: 4.5rem;
+    }
+    &__service-name {
+
+    }
+    &__value {
+        display: flex;
+        gap: 13rem;
+        font-weight: bolder;
+    }
+    &__free {
+        color: #96317D;
+        font-weight: bolder;
+    }
+    &__price-hidden {
+        display: none;
+    }
+    &__show-all {
+        font-size: 1.6rem;
+        color: #96317D;
+        font-weight: 500;
+        margin-top: 5rem;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 10rem;
+
+        .price-icon {
+            width: 2rem;
+        }
+    }
+
+    .more-items {
+        position: absolute;
+        top: -100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0.23s, opacity 0.23s linear;
+    }
+    .active {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+    }
+}
+
+@media (max-width: 620px) {
+    .price {
+        &__price-hidden {
+            display: block;
+        }
+        .mobile-hidden {
+            display: none;
+        }
+        &__block > p:nth-child(2) {
+            padding-bottom: 1rem;
+        }
+        &__service-name {
+            font-weight: bolder;
+            padding-bottom: 1rem;
+        }
+        &__value {
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: end;
+        }
+        &__free {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+

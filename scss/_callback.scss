@@ -1,0 +1,77 @@
+.callback {
+    background-image: url(img/callback.png) ;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__form {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        border-radius: 1.5rem;
+        padding: 5rem 9rem;
+        max-width: 100%;
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        &-title {
+            margin-right: 6rem;
+
+            h3 {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 4.7rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                b {
+                    color: #A95094;
+                }
+            }
+            @media (max-width: 1100px) {
+                margin-right: 0;
+            }
+        }
+        &-input {
+            margin-right: 3rem;
+            padding: 2.5rem 3rem;
+            background-color:#F5F5F5;
+            border: none;
+            border-radius: 1rem;
+            width: 32rem;
+            max-width: 100%;
+            @media (max-width: 1100px) {
+                margin-right: 0;
+            }
+        }
+        &-btn {
+            padding: 2.5rem 9.6rem;
+            text-align: center;
+            background-color:#A95094;
+            border: none;
+            border-radius: 1.5rem;
+            color: #FFFFFF;
+            width: 32rem;
+            max-width: 100%;
+            &:hover {
+                background-color: transparent;
+                color: #A95094;
+                border: 2px solid #A95094;
+            }
+        }
+    }
+
+}
+

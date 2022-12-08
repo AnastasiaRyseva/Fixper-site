@@ -1,0 +1,181 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #A95094;
+    padding-top: 10rem;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 1200px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    &__pictures {
+        max-width: 75rem;
+        position: relative;
+        
+        &-man {
+            position: relative;
+            z-index: 10;
+            bottom: -.2rem;
+        }
+        &-washer {
+            position: absolute;
+            top: 11rem;
+            left: -20rem;
+            z-index: 6;
+        }
+        &-layer1 {
+            position: absolute;
+            bottom: 0;
+            right: 21.5rem;
+            z-index: 4;
+        }
+        &-layer2 {
+            position: absolute;
+            bottom: -5rem;
+            right: 21.5rem;
+            max-width: 44rem;
+            z-index: 2;
+        }
+        &-squarestar {
+            position: absolute;
+            top: 4rem;
+            left: 9rem;
+            z-index: 1;
+        }
+        @media (max-width: 1200px) {
+            &-layer1,
+            &-layer2 {
+                max-width: 36rem;
+            }
+            &-layer1 {
+                right: 5rem;
+            }
+            &-layer2 {
+                bottom: 0;
+                right: 5rem;
+            }
+            &-squarestar {
+                max-width: 18rem;
+                left: 39rem;
+            }
+            &-washer {
+                max-width: 34rem;
+                top: 21rem;
+            }
+        }
+        @media (max-width: 620px) {
+            &-layer1,
+            &-layer2,
+            &-squarestar {
+                max-width: 10rem;
+            }
+            &-squarestar {
+                left: 10rem;
+            }
+            &-washer {
+                max-width: 19rem;
+                top: 2.4rem;
+                left: -7rem;
+            }
+            &-man {
+                max-width: 30rem;
+                left: 13rem;
+            }
+        }
+    
+    }
+
+    &__promotion {
+        margin-top: 13rem;
+        max-width: 66rem;
+        &-title {
+            font-family: "Norms-ExtraBold";
+            font-size: 6.7rem;
+            line-height: 6.3rem;
+            font-weight: 800;
+            color: #ffffff;
+            @media (max-width: 620px) {
+                font-size: 3.8rem;
+                line-height: 3.6rem;
+            }
+        }
+        &-text {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+            color: #ffffff;
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+            max-width: 46rem;
+            display: inline-block;
+            b {
+                color: #FFC464;
+            }
+        }
+        &-btn {
+            background-color:#000000;
+            padding: 1.8rem 5rem;
+            color: #ffffff;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 2.3rem;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                background-color: #FFC464;
+            }
+        }
+    }
+}
+
+
+.popup {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.4rem 3rem;
+    z-index: 50;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+
+    &-close {
+        margin-right: 6.7rem;
+        cursor: pointer;
+    }
+    b {
+        color: #FFC464;
+    }
+    &-text {
+        margin-right: 6.3rem;
+    }
+    &-link {
+        color: #FFC464;
+        margin-right: 2.5rem;
+    }
+    @media (max-width: 620px) {
+        .popup {
+            font-size: 1rem;
+            &-close {
+                margin-right: 3.7rem;
+            }
+            &-link {
+                margin-right: .5rem;
+            }
+            &-text {
+                margin-right: 2.3rem;
+            }
+        }
+        
+    }
+}

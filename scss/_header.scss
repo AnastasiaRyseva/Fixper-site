@@ -1,0 +1,195 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+    background: #A95094;
+    font-family: "Norms-Regular";
+    font-size: 1.6rem;
+
+    &__line {
+        display: none;
+        width: 100%;
+        height: .2rem;
+        background-color: #994786;
+        @media (max-width: 1100px) {
+            display: block;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        padding-bottom: 1.7rem;
+        &_text {
+            font-size: 3rem;
+            line-height: 2.3rem;
+            font-family: "Norms-Medium";
+            font-weight: 700;
+            color: #fff;
+            
+        }
+    }
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        margin-left: 7.4rem;
+        @media (max-width: 1100px) {
+            display: none;
+        }
+    }
+
+    &__nav-item {
+        margin-right: 4rem;
+    }
+
+    &__link {
+        
+        color: #fff;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: #ffc464;
+        }
+    }
+    &__burger {
+        display: none;
+        @media (max-width: 1100px) {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative; 
+        }
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: all 0.3s ease 0s;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
+    }
+    &__burger.active span {
+		transform: scale(0);
+	}
+    &__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+    &__burger.active:after {
+		transform: rotate(-45deg);
+		top: 9px;
+	}
+    &__burger span {
+        position: absolute;
+		top: 9px;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		transition: all 0.3s ease 0s;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        @media (max-width: 1100px) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+    &__place {
+        font-family: "Norms-Regular", sans-serif;
+        color: #fff;
+        margin-right: 4rem;
+        &:before {
+            content: "";
+            width: 2rem;
+            height: 2rem;
+            padding-left: 2rem;
+            margin-right: 1rem;
+            background-image: url("img/geo.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    &__button {
+        font-family: "Norms-Medium", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 1.8rem 4rem;
+        border: 2px solid #ffc464;
+        border-radius: 2rem;
+        background: none;
+        color: #ffc464;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: #ffc464;
+            color: #fff;
+        }
+    }
+    
+}
+.fixed {
+	background-color: #994786;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	position: fixed;
+}
+
+.mobile-popup {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .mobile-popup {
+        position: fixed;
+        top: 7.5rem;
+        left: -200%;
+        width: 100vw;
+        height: 100%;
+        background: #994786;
+        z-index: 1000;
+        display: flex;
+        transition: 0.3s;
+    }
+    .mobile-popup.open {
+        left: 0;
+    }
+    .mobile-popup .header__nav-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+    }
+    .mobile-popup .header__nav-list > li {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+}
+
+

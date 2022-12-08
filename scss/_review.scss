@@ -1,0 +1,57 @@
+.review {
+    padding-bottom: 10rem;
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5.2rem;
+        margin: 10rem 0 5rem 0;
+        text-align: center;
+    }
+    &__slide {
+        background-color: #FAFAFA;
+        padding: 5rem;
+        max-width: 570px;
+        height: 40rem;
+    }
+    &__person {
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+        margin-bottom: 3.5rem;
+
+        img {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    &__person-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__person-name > p:nth-child(1) {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    &__person-name > p:nth-child(2) {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.7rem;
+    }
+}
+.review-swiper {
+    margin-bottom: 4rem;
+}
+.prev2,
+.next2 {
+  color: #96317d;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

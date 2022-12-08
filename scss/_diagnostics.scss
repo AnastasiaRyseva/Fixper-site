@@ -1,0 +1,224 @@
+.diagnostics {
+    background-color: #E5E5E5;
+    padding: 2rem;
+    position: relative;
+    &__img-hidden {
+        display: none;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+            color: #A95094;
+            margin-top: 10rem;
+        }
+        &-text {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 4rem;
+            margin-top: 1.5rem;
+        }
+        &-btn {
+            display: none;
+            border: 1px solid #96317D;
+            padding: 2rem 0;
+            color: #96317D;
+            font-size: 1.6rem;
+            border-radius: 1rem;
+            margin-top: 3rem;
+            max-width: 100%;
+            cursor: pointer;
+            position: relative;
+            &:after {
+                content: "";
+                background: url(img/down.svg);
+                position: absolute;
+                z-index: 2;
+                width: 9px;
+                height: 7px;
+                right: 3rem;
+                bottom: 2.5rem;
+            }
+        }
+        &-rule {
+            margin-top: 5rem;
+            font-size: 1.6rem;
+            display: flex;
+            flex-direction: row;
+            p {
+                padding-left: .5rem;
+                padding-top: .5rem;
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        margin-left: 5rem;
+    }
+    &__img > img:nth-child(1) {
+        position: absolute;
+        top: 3rem;
+        right: 6.5rem;
+    }
+    &__img > img:nth-child(2) {
+        position: absolute;
+        bottom: 25rem;
+        left: -7rem;
+    }
+}
+
+//список проблем для большого экрана
+.grid-container {
+    margin-top: 5rem;
+    margin-right: 3rem;
+    display: grid;
+	grid-template-columns: minmax(100px, 400px);
+	grid-template-rows: auto;
+	grid-gap: 20px;
+
+}
+.grid-container > p:nth-child(4) {
+    grid-column: 1 / 4;
+}
+.grid-item {
+    padding: 1.5rem;
+    background-color: transparent;
+    color: #96317D;
+    font-size: 1.6rem;
+    border: 1px solid #96317D;
+    text-align: center;
+    border-radius: 3rem;
+    &:hover {
+        color: #ffffff;
+        background-color: #96317D;
+    }
+}
+
+@media (max-width: 1100px) {
+    .grid-container {
+        display: none;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .diagnostics {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__img {
+            display: none;
+        }
+        &__body {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &-btn {
+                display: block;
+                width: 100%;
+            }
+            &-rule {
+                text-align: center;
+                &:before {
+                    left: 32rem;
+                }
+            }
+        }   
+        &__img-hidden {
+            display: block;
+            max-width: 40rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 50;
+        }
+        &__img-hidden > img:nth-child(2) {
+            position: absolute;
+            left: -1rem;
+            bottom: 0;
+        }
+        &__img-hidden > img:nth-child(3) {
+            position: absolute;
+            right: 3rem;
+            bottom: 0;
+            z-index: -1;
+            max-width: 100%;
+        }
+    }
+}
+.hidden-diagnosticBlock.close {
+    right: -200%;
+}
+.hidden-diagnosticBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    transition: 0.3s;
+    background-color: gray;
+    &__back {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        span {
+            margin-left: 2.5rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+            color: #993280;
+        }
+    }
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+        margin-bottom: 5rem;
+    }
+    &__list > li{
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+    .diagnostic-percent {
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 4rem;
+        margin-right: 3rem;
+        border: 1px solid #FFC464;
+        border-radius: 60%;
+        padding: 3rem;
+    }
+    .diagnostic-price {
+        p {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.8rem;
+            margin-bottom: .7rem;
+        }
+    }
+    .diagnostic-price > span:nth-child(2) {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-right: 1rem;
+    }
+    .diagnostic-price > span:nth-child(3) {
+        color: #993280;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+}

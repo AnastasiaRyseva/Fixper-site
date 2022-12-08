@@ -1,0 +1,86 @@
+.team {
+    background-color: #FAFAFA;
+    &__introduce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h4 {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+            color: #96317D;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 4rem;
+            color: black;
+            margin-bottom: 5rem;
+        }
+    }
+    &__men {
+        background-color: #FFFFFF;
+        &-about {
+            margin: 5rem 0 5rem 4.5rem;
+            @media (max-width: 620px){
+                align-items: center;
+                text-align: center;
+                margin: 1rem 1rem;
+            }    
+        }
+        &-name {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 2.8rem;    
+            margin-bottom: .8rem;   
+            @media (max-width: 620px){
+                font-size: 1.8rem;
+                line-height: 2rem; 
+            }    
+        }
+        &-specialty {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            margin-bottom: 2.5rem;
+        }
+        &-list {
+            padding-bottom: 5rem;
+            li {
+                margin-bottom: 2rem;
+                color:#96317D;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 1.9rem;
+            }
+        }
+
+    }
+}
+
+.button-prev:hover,
+.button-next:hover {
+  color: black;
+}
+
+.button-prev,
+.button-next {
+  color: #96317d;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.swiper-click {
+	height: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+.swiper-right {
+	font-family: "Norms-Medium", sans-serif;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+    gap: 4rem;
+}
+
