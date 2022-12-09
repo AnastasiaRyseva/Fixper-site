@@ -215,7 +215,7 @@ body.noscroll {
   height: 2rem;
   padding-left: 2rem;
   margin-right: 1rem;
-  background-image: url("img/geo.svg");
+  background-image: url("../img/geo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -289,7 +289,6 @@ body.noscroll {
   padding-top: 10rem;
   overflow: hidden;
   position: relative;
-  height: 100vh;
 }
 @media (max-width: 1200px) {
   .main {
@@ -458,7 +457,7 @@ body.noscroll {
   }
 }
 .privilege {
-  margin-top: 11rem;
+  margin-top: 7rem;
   margin-bottom: 5.5rem;
 }
 .privilege__list {
@@ -484,6 +483,8 @@ body.noscroll {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
   .privilege__list-item {
     display: flex;
@@ -494,7 +495,7 @@ body.noscroll {
     display: inline-block;
     max-width: 20rem;
     text-align: start;
-    margin-left: 1rem;
+    margin-left: 2rem;
     align-self: center;
   }
 }
@@ -551,7 +552,7 @@ body.noscroll {
 }
 .diagnostics__body-btn:after {
   content: "";
-  background: url(img/down.svg);
+  background: url(../img/down.svg);
   position: absolute;
   z-index: 2;
   width: 9px;
@@ -614,6 +615,7 @@ body.noscroll {
 @media (max-width: 1100px) {
   .grid-container {
     display: none;
+    margin-right: 0;
   }
   .flex-container {
     display: flex;
@@ -851,7 +853,7 @@ body.noscroll {
 .team__men-about {
   margin: 5rem 0 5rem 4.5rem;
 }
-@media (max-width: 620px) {
+@media (max-width: 690px) {
   .team__men-about {
     align-items: center;
     text-align: center;
@@ -864,9 +866,9 @@ body.noscroll {
   line-height: 2.8rem;
   margin-bottom: 0.8rem;
 }
-@media (max-width: 620px) {
+@media (max-width: 690px) {
   .team__men-name {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     line-height: 2rem;
   }
 }
@@ -875,6 +877,12 @@ body.noscroll {
   font-weight: 400;
   line-height: 1.9rem;
   margin-bottom: 2.5rem;
+}
+@media (max-width: 690px) {
+  .team__men-specialty {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 .team__men-list {
   padding-bottom: 5rem;
@@ -1012,7 +1020,6 @@ body.noscroll {
 
 .question {
   margin-top: 10rem;
-  margin-bottom: 10rem;
 }
 .question__wrapper {
   display: flex;
@@ -1094,7 +1101,7 @@ body.noscroll {
 }
 
 .callback {
-  background-image: url(img/callback.png);
+  background-image: url(../img/callback.png);
   background-position: center;
   width: 100%;
   display: flex;
@@ -1102,8 +1109,8 @@ body.noscroll {
   justify-content: center;
 }
 .callback__form {
-  margin-top: 10rem;
   margin-bottom: 10rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;

@@ -38,7 +38,7 @@
             position: relative;
             &:after {
                 content: "";
-                background: url(img/down.svg);
+                background: url(../img/down.svg);
                 position: absolute;
                 z-index: 2;
                 width: 9px;
@@ -104,6 +104,7 @@
 @media (max-width: 1100px) {
     .grid-container {
         display: none;
+        margin-right: 0;
     }
     .flex-container {
         display: flex;

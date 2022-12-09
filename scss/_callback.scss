@@ -1,5 +1,5 @@
 .callback {
-    background-image: url(img/callback.png) ;
+    background-image: url(../img/callback.png) ;
     background-position: center;
     width: 100%;
     display: flex;
@@ -7,8 +7,8 @@
     justify-content: center;
 
     &__form {
-        margin-top: 10rem;
         margin-bottom: 10rem;
+        margin-top: 10rem;
         display: flex;
         justify-content: space-between;
         background-color: #FFFFFF;
