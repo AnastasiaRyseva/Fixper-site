@@ -1172,6 +1172,7 @@ body.noscroll {
   color: #FFFFFF;
   width: 32rem;
   max-width: 100%;
+  font-size: 1.5rem;
 }
 .callback__form-btn:hover {
   background-color: transparent;
@@ -1185,7 +1186,7 @@ body.noscroll {
 }
 @media (max-width: 620px) {
   .map {
-    margin-top: 0;
+    margin-top: 3rem;
   }
 }
 .map iframe {
@@ -1236,6 +1237,11 @@ body.noscroll {
 .contact__btn:hover {
   background-color: #993280;
   color: white;
+}
+@media (max-width: 650px) {
+  .contact__btn {
+    padding: 2rem 4rem;
+  }
 }
 
 .footer {
