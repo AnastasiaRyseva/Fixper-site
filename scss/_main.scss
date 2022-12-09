@@ -6,6 +6,7 @@
     padding-top: 10rem;
     overflow: hidden;
     position: relative;
+    height: 100vh;
     @media (max-width: 1200px) {
         flex-direction: column-reverse;
         align-items: center;
@@ -163,19 +164,19 @@
         color: #FFC464;
         margin-right: 2.5rem;
     }
-    @media (max-width: 620px) {
-        .popup {
-            font-size: 1rem;
-            &-close {
-                margin-right: 3.7rem;
-            }
-            &-link {
-                margin-right: .5rem;
-            }
-            &-text {
-                margin-right: 2.3rem;
-            }
+   
+}
+@media (max-width: 620px) {
+    .popup {
+        font-size: 1rem;
+        &-close {
+            margin-right: 3.7rem;
         }
-        
+        &-link {
+            margin-right: .5rem;
+        }
+        &-text {
+            margin-right: 2.3rem;
+        }
     }
 }

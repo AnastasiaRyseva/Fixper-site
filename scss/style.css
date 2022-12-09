@@ -80,6 +80,7 @@ img {
   max-width: 120rem;
   margin: 0 auto;
   padding: 2rem;
+  overflow-x: hidden;
 }
 
 body.noscroll {
@@ -288,6 +289,7 @@ body.noscroll {
   padding-top: 10rem;
   overflow: hidden;
   position: relative;
+  height: 100vh;
 }
 @media (max-width: 1200px) {
   .main {
@@ -440,21 +442,21 @@ body.noscroll {
   color: #FFC464;
   margin-right: 2.5rem;
 }
+
 @media (max-width: 620px) {
-  .popup .popup {
+  .popup {
     font-size: 1rem;
   }
-  .popup .popup-close {
+  .popup-close {
     margin-right: 3.7rem;
   }
-  .popup .popup-link {
+  .popup-link {
     margin-right: 0.5rem;
   }
-  .popup .popup-text {
+  .popup-text {
     margin-right: 2.3rem;
   }
 }
-
 .privilege {
   margin-top: 11rem;
   margin-bottom: 5.5rem;
@@ -1063,6 +1065,7 @@ body.noscroll {
   border-radius: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: #000000;
 }
 .question__btn:first-child {
   margin-top: 0;
