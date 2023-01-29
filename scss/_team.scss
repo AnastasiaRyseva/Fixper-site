@@ -22,6 +22,9 @@
     }
     &__men {
         background-color: #FFFFFF;
+        @media (max-width: 700px){
+            text-align: center;
+        }
         &-about {
             margin: 5rem 0 5rem 4.5rem;
             @media (max-width: 690px){
@@ -62,29 +65,7 @@
         }
 
     }
+    
 }
 
-.button-prev:hover,
-.button-next:hover {
-  color: black;
-}
-
-.button-prev,
-.button-next {
-  color: #96317d;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.swiper-click {
-	height: 30px;
-	display: flex;
-	justify-content: flex-end;
-}
-.swiper-right {
-	font-family: "Norms-Medium", sans-serif;
-	font-size: 16px;
-	display: flex;
-	align-items: center;
-    gap: 4rem;
-}
 

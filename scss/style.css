@@ -83,6 +83,10 @@ img {
   overflow-x: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 body.noscroll {
   overflow: hidden;
 }
@@ -149,6 +153,7 @@ body.noscroll {
 }
 .header__burger {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 1100px) {
   .header__burger {
@@ -418,7 +423,8 @@ body.noscroll {
   position: absolute;
   bottom: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: #000000;
   color: #ffffff;
   padding: 1.4rem 3rem;
@@ -850,6 +856,11 @@ body.noscroll {
 .team__men {
   background-color: #FFFFFF;
 }
+@media (max-width: 700px) {
+  .team__men {
+    text-align: center;
+  }
+}
 .team__men-about {
   margin: 5rem 0 5rem 4.5rem;
 }
@@ -893,32 +904,6 @@ body.noscroll {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-}
-
-.button-prev:hover,
-.button-next:hover {
-  color: black;
-}
-
-.button-prev,
-.button-next {
-  color: #96317d;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.swiper-click {
-  height: 30px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.swiper-right {
-  font-family: "Norms-Medium", sans-serif;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
 }
 
 .review {
@@ -1092,7 +1077,7 @@ body.noscroll {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .active-content:after {

@@ -75,20 +75,42 @@ priceIcon.addEventListener('click', (e) => {
 })
 //слайдеры
 new Swiper('.mySwiper', {
+    autoplay: {
+    delay: 4100,
+    },
     slidesPerView: 3,
     spaceBetween: 30,
-    navigation: {
-		nextEl: '.button-next',
-		prevEl: '.button-prev'
-	},
     speed: 500,
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      },
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      710: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+  }
 });
 
 new Swiper('.review-swiper', {
-    navigation: {
-		nextEl: '.next2',
-		prevEl: '.prev2'
-	},
+    autoplay: {
+      delay: 4100,
+    },
+    loop: true,
     breakpoints: {
         320: {
           slidesPerView: 1,
